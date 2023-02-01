@@ -1,0 +1,17 @@
+{
+  "name": "QuickNav",
+  "description": "Menemukan file di Google Drive menjadi lebih cepat dan mudah.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": "resources/icons/quicknav-icon-16x16.png",
+    "default_title": "Quick Navigation",
+    "default_popup": "popup/index.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "tabs", "declarativeContent", "cookies"],
+  "host_permissions": ["http://localhost:8080/", "https://drive.google.com/"]
+}
